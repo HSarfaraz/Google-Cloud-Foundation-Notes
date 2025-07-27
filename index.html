@@ -14,8 +14,8 @@
           <h2 class="text-2xl font-semibold text-cyan-300 mb-4">Setup and Configuration</h2>
           <ul class="list-disc list-inside space-y-2">
             <li>Click on <strong>Start a Lab</strong> button</li>
+            <li>Open <a href="https://console.cloud.google.com" class="text-blue-400 underline">Google Cloud Console</a> in cognitive window → Copy credentials → Sign in → Agree</li>
             <li>Navigate to <strong>Cloud Overview</strong> → Check checkbox and click <strong>Agree</strong></li>
-            <li>Open <a href="https://console.cloud.google.com" class="text-blue-400 underline">Google Cloud Console</a> → Copy credentials → Sign in → Agree</li>
             <li>Click on <strong>Activate Cloud Shell</strong> button → Click <strong>Continue</strong></li>
           </ul>
           <h3 class="text-xl font-semibold text-cyan-200 mt-6 mb-2">To connect with the project:</h3>
@@ -25,161 +25,202 @@
           </ul>
         </section>
 
+        <!-- Lab 1 Updated Card -->
         <section class="bg-gray-800 p-8 md:px-12 md:py-10 rounded-2xl shadow-md ml-2 md:ml-6 mt-6">
-          <h2 class="text-2xl font-semibold text-yellow-300 mb-4">Lab 1: A tour of Google Hands-on Labs</h2>
+          <h2 class="text-2xl font-bold text-yellow-700 mb-6">Lab 1: A Tour of Google Hands-on Labs</h2>
+
+          <h3 class="text-xl font-semibold text-yellow-600 mb-2">Lab Fundamentals - Test Your Understanding</h3>
           <ul class="list-disc list-inside space-y-2">
-            <li>To access the Google Console: <a href="https://console.cloud.google.com" class="text-blue-400 underline">console.cloud.google.com</a></li>
-            <li>To install Google SDK: <a href="https://cloud.google.com/sdk" class="text-blue-400 underline">cloud.google.com/sdk</a></li>
-            <li>Configure SDK in Google Cloud Environment: <code class="bg-black/30 px-2 py-1 rounded">gcloud init</code></li>
-            <li>Login to <a href="https://console.cloud.google.com" class="text-blue-400 underline">console.cloud.google.com</a> → Agree to terms</li>
-            <li>Search <strong>API</strong> → Go to <strong>API and Services</strong> → Click <strong>Library</strong></li>
-            <li>Search for <strong>Dialogflow API</strong> → Enable it → Click <em>Check my progress</em></li>
-            <li>Visit <a href="https://cloudskillsboost.google/quests" class="text-blue-400 underline">cloudskillsboost.google/quests</a> and refresh after 3 minutes to confirm progress</li>
+            <li>This builds a temporary environment in Google Cloud. → <strong>Answer:</strong> Start lab (button)</li>
+            <li>When the timer reaches 00:00:00, you lose access to your environment. → <strong>Answer:</strong> True</li>
+            <li>Some labs have tracking that scores your completion. → <strong>Answer:</strong> True</li>
+            <li>To get credit, you must complete required steps. → <strong>Answer:</strong> True</li>
+            <li><strong>Submit</strong></li>
           </ul>
-        </section>
+
+          <h3 class="text-xl font-semibold text-yellow-600 mt-6 mb-2">Task 1: Access the Cloud Console</h3>
+          <ul class="list-disc list-inside space-y-2">
+            <li><strong>Test:</strong> What field is NOT found in the left pane? → <strong>Answer:</strong> System admin</li>
+            <li>Username resembles student-xx@qwiklabs.net → <strong>Answer:</strong> True</li>
+          </ul>
+
+          <h3 class="text-xl font-semibold text-yellow-600 mt-6 mb-2">Task 2: View Projects in the Cloud Console</h3>
+          <ul class="list-disc list-inside space-y-2">
+            <li>Click dropdown beside project name → Select All</li>
+            <li>Notice "Qwiklabs Resources" project listed</li>
+            <li>Click <strong>Cancel</strong></li>
+            <li>Navigation Menu → Click <strong>View All Products</strong></li>
+            <li><strong>Test:</strong> Organizing entity → <strong>Answer:</strong> Google Cloud Project</li>
+            <li>Qwiklabs Resources is read-only → <strong>Answer:</strong> True</li>
+            <li>Qwiklabs Resources is the lab workspace → <strong>Answer:</strong> False</li>
+          </ul>
+
+          <h3 class="text-xl font-semibold text-yellow-600 mt-6 mb-2">Task 3: Review and Modify Roles and Permissions</h3>
+          <ul class="list-disc list-inside space-y-2">
+            <li><strong>Test:</strong> Quick access to services → <strong>Answer:</strong> Navigation menu</li>
+            <li>Basic roles control project permissions → <strong>Answer:</strong> True</li>
+            <li>Viewer + modification permissions → <strong>Answer:</strong> Editor role</li>
+          </ul>
+
+          <h3 class="text-xl font-semibold text-yellow-600 mt-6 mb-2">Task 4: Enable APIs and Services</h3>
+          <ul class="list-disc list-inside space-y-2">
+            <li>Navigation Menu → API and Services → Library</li>
+            <li>Search and enable <strong>Dialogflow API</strong></li>
+            <li>Click <strong>TRY THIS API</strong> → Scroll down then return</li>
+            <li>Click <strong>Check my progress</strong></li>
+            <li>Optional: Visit <a href="https://cloudskillsboost.google/quests" class="text-blue-600 underline">cloudskillsboost.google/quests</a> after 3 minutes</li>
+            <li><strong>Test:</strong> Enabling APIs at lab start is needed → <strong>Answer:</strong> False</li>
+          </ul>
+
+          <h3 class="text-xl font-semibold text-yellow-600 mt-6 mb-2">Task 5: End Your Lab</h3>
+          <ul class="list-disc list-inside space-y-2">
+            <li>Click <strong>End Lab</strong></li>
+            <li>Give Review → <strong>Submit</strong></li>
+          </ul>
+      </section>
 
       
 
         <section class="bg-gray-800 p-8 md:px-12 md:py-10 rounded-2xl shadow-md ml-2 md:ml-6 mt-6">
-  <h2 class="text-2xl font-semibold text-green-300 mb-4">Lab 2: Cloud Shell & gcloud</h2>
-  <ol class="list-decimal list-inside space-y-2">
-    <li>Open Google Console: <a href="https://console.cloud.google.com" class="text-blue-400 underline">console.cloud.google.com</a></li>
-    <li>Copy the username and password and use them at <a href="https://account.google.com" class="text-blue-400 underline">account.google.com</a>. Please do not use your own or company credentials.</li>
-    <li>There are 4 tasks available; click on Task 1 and copy the details.</li>
-    <li>Go to <strong>console.cloud.google.com</strong> → Refresh → Verify → Click on the header icon → Activate Cloud Shell → Run <code class="bg-black/30 px-2 py-1 rounded">gcloud auth init</code> → Click <strong>Continue</strong> to authorize</li>
-  </ol>
+          <h2 class="text-2xl font-semibold text-green-300 mb-4">Lab 2: Cloud Shell & gcloud</h2>
+          <ol class="list-decimal list-inside space-y-2">
+            <li>Open Google Console: <a href="https://console.cloud.google.com" class="text-blue-400 underline">console.cloud.google.com</a></li>
+            <li>Copy the username and password and use them at <a href="https://account.google.com" class="text-blue-400 underline">account.google.com</a>. Please do not use your own or company credentials.</li>
+            <li>There are 4 tasks available; click on Task 1 and copy the details.</li>
+            <li>Go to <strong>console.cloud.google.com</strong> → Refresh → Verify → Click on the header icon → Activate Cloud Shell → Run <code class="bg-black/30 px-2 py-1 rounded">gcloud auth init</code> → Click <strong>Continue</strong> to authorize</li>
+          </ol>
 
-  <h3 class="text-xl font-semibold text-green-200 mt-6 mb-2">Task 1: Configure your environment</h3>
-  <ul class="list-disc list-inside space-y-1">
-    <li><code>gcloud config list project</code></li>
-    <li><code>gcloud config get-value compute/zone</code></li>
-    <li><code>gcloud config get-value compute/region</code></li>
-    <li><code>gcloud compute project=info describe &lt;your_project_id&gt;</code> → Copy the Project ID from <em>google.qwiklabs.com</em></li>
-    <li><code>export PROJECT_ID=&lt;your_project_id&gt;</code></li>
-    <li><code>export ZONE=</code> (Paste zone from console key: <em>google-default-zone</em>)</li>
-    <li><code>echo $ZONE</code></li>
-    <li><code>gcloud compute instances create gcelab2 --machine-type n1-standard-2 --zone $ZONE</code></li>
-    <li>Click on <strong>Check my progress</strong> button</li>
-    <li>Helpful commands:
-      <ul class="ml-6 list-disc">
-        <li><code>gcloud compute instances create --help</code></li>
-        <li><code>gcloud -h</code></li>
-        <li><code>gcloud config --help</code></li>
-        <li><code>gcloud help config</code></li>
-        <li><code>gcloud config list</code></li>
-        <li><code>gcloud config list --all</code></li>
-        <li><code>gcloud components list</code></li>
-      </ul>
-    </li>
-  </ul>
+          <h3 class="text-xl font-semibold text-green-200 mt-6 mb-2">Task 1: Configure your environment</h3>
+          <ul class="list-disc list-inside space-y-1">
+            <li><code>gcloud config list project</code></li>
+            <li><code>gcloud config get-value compute/zone</code></li>
+            <li><code>gcloud config get-value compute/region</code></li>
+            <li><code>gcloud compute project=info describe &lt;your_project_id&gt;</code> → Copy the Project ID from <em>google.qwiklabs.com</em></li>
+            <li><code>export PROJECT_ID=&lt;your_project_id&gt;</code></li>
+            <li><code>export ZONE=</code> (Paste zone from console key: <em>google-default-zone</em>)</li>
+            <li><code>echo $ZONE</code></li>
+            <li><code>gcloud compute instances create gcelab2 --machine-type n1-standard-2 --zone $ZONE</code></li>
+            <li>Click on <strong>Check my progress</strong> button</li>
+            <li>Helpful commands:
+              <ul class="ml-6 list-disc">
+                <li><code>gcloud compute instances create --help</code></li>
+                <li><code>gcloud -h</code></li>
+                <li><code>gcloud config --help</code></li>
+                <li><code>gcloud help config</code></li>
+                <li><code>gcloud config list</code></li>
+                <li><code>gcloud config list --all</code></li>
+                <li><code>gcloud components list</code></li>
+              </ul>
+            </li>
+          </ul>
 
-  <h3 class="text-xl font-semibold text-green-200 mt-6 mb-2">Task 2: Install a new component</h3>
-  <ul class="list-disc list-inside space-y-1">
-    <li><code>sudo apt-get install google-cloud-sdk</code></li>
-    <li><code>gcloud beta interactive</code></li>
-    <li><code>gcloud compute instances describe &lt;your_vm&gt;</code> (e.g., <code>gcelab2</code>)</li>
-    <li>If prompted: "Did you mean zone: [gcelab2]?" → Enter <strong>y</strong></li>
-  </ul>
+          <h3 class="text-xl font-semibold text-green-200 mt-6 mb-2">Task 2: Install a new component</h3>
+          <ul class="list-disc list-inside space-y-1">
+            <li><code>sudo apt-get install google-cloud-sdk</code></li>
+            <li><code>gcloud beta interactive</code></li>
+            <li><code>gcloud compute instances describe &lt;your_vm&gt;</code> (e.g., <code>gcelab2</code>)</li>
+            <li>If prompted: "Did you mean zone: [gcelab2]?" → Enter <strong>y</strong></li>
+          </ul>
 
-  <h3 class="text-xl font-semibold text-green-200 mt-6 mb-2">Task 3: Connect to your VM instance with SSH</h3>
-  <ul class="list-disc list-inside space-y-1">
-    <li><code>gcloud compute ssh gcelab2 --zone $ZONE</code></li>
-    <li>Enter <strong>y</strong> if prompted to continue</li>
-    <li>Leave passphrase empty</li>
-    <li><code>exit</code></li>
-  </ul>
+          <h3 class="text-xl font-semibold text-green-200 mt-6 mb-2">Task 3: Connect to your VM instance with SSH</h3>
+          <ul class="list-disc list-inside space-y-1">
+            <li><code>gcloud compute ssh gcelab2 --zone $ZONE</code></li>
+            <li>Enter <strong>y</strong> if prompted to continue</li>
+            <li>Leave passphrase empty</li>
+            <li><code>exit</code></li>
+          </ul>
 
-  <h3 class="text-xl font-semibold text-green-200 mt-6 mb-2">Task 4: Use the Home directory</h3>
-  <ul class="list-disc list-inside space-y-1">
-    <li><code>cd $HOME</code></li>
-    <li><code>vi ./.bashrc</code></li>
-  </ul>
+          <h3 class="text-xl font-semibold text-green-200 mt-6 mb-2">Task 4: Use the Home directory</h3>
+          <ul class="list-disc list-inside space-y-1">
+            <li><code>cd $HOME</code></li>
+            <li><code>vi ./.bashrc</code></li>
+          </ul>
 
-  <div class="mt-6">
-    <p class="text-green-300 font-medium">Other ways to access Google Cloud Platform:</p>
-    <ul class="list-disc list-inside ml-6">
-      <li>Using API (3rd way)</li>
-      <li>Using Cloud Mobile App (4th way)</li>
-    </ul>
-  </div>
-</section>
+          <div class="mt-6">
+            <p class="text-green-300 font-medium">Other ways to access Google Cloud Platform:</p>
+            <ul class="list-disc list-inside ml-6">
+              <li>Using API (3rd way)</li>
+              <li>Using Cloud Mobile App (4th way)</li>
+            </ul>
+          </div>
+        </section>
 
         <section class="bg-gray-800 p-8 md:px-12 md:py-10 rounded-2xl shadow-md ml-2 md:ml-6 mt-6">
-  <h2 class="text-2xl font-semibold text-purple-300 mb-4">Create a Virtual Machine</h2>
+          <h2 class="text-2xl font-semibold text-purple-300 mb-4">Create a Virtual Machine</h2>
 
-  <h3 class="text-xl font-semibold text-purple-200 mb-2">Setup and Configuration</h3>
-  <ul class="list-disc list-inside space-y-2">
-    <li>Click on <strong>Start a Lab</strong> button</li>
-    <li>Open Google Cloud Console → Copy credentials → Sign in → Check checkbox and click on Agree in incognito mode</li>
-    <li>Click on <strong>Activate Cloud Shell</strong> button → Click <strong>Continue</strong></li>
-  </ul>
+          <h3 class="text-xl font-semibold text-purple-200 mb-2">Setup and Configuration</h3>
+          <ul class="list-disc list-inside space-y-2">
+            <li>Click on <strong>Start a Lab</strong> button</li>
+            <li>Open Google Cloud Console → Copy credentials → Sign in → Check checkbox and click on Agree in incognito mode</li>
+            <li>Click on <strong>Activate Cloud Shell</strong> button → Click <strong>Continue</strong></li>
+          </ul>
 
-  <h3 class="text-xl font-semibold text-purple-200 mt-4 mb-2">Set the Region and Zone</h3>
+          <h3 class="text-xl font-semibold text-purple-200 mt-4 mb-2">Set the Region and Zone</h3>
 
-  <h3 class="text-xl font-semibold text-purple-200 mb-2">To connect with the project:</h3>
-  <ul class="list-disc list-inside space-y-2">
-    <li><code>gcloud auth list</code> → Click on <strong>Authorize</strong></li>
-    <li><code>gcloud config list project</code></li>
-    <li><code>gcloud config set compute/region us-east1</code></li>
-    <li><code>export REGION=us-east1</code></li>
-    <li><code>export REGION=us-east1-d</code></li>
-  </ul>
+          <h3 class="text-xl font-semibold text-purple-200 mb-2">To connect with the project:</h3>
+          <ul class="list-disc list-inside space-y-2">
+            <li><code>gcloud auth list</code> → Click on <strong>Authorize</strong></li>
+            <li><code>gcloud config list project</code></li>
+            <li><code>gcloud config set compute/region us-east1</code></li>
+            <li><code>export REGION=us-east1</code></li>
+            <li><code>export REGION=us-east1-d</code></li>
+          </ul>
 
-  <h3 class="text-xl font-semibold text-purple-200 mt-4 mb-2">Task 1: Create a new Instance from the Cloud Console</h3>
-  <ul class="list-disc list-inside space-y-2">
-    <li>Navigation Menu → <strong>Compute Engine</strong> → <strong>VM Instances</strong></li>
-    <li>Click <strong>Create Instance</strong> → Name: <code>gcelab</code></li>
-    <li>Set Zone and Region as instructed</li>
-    <li>Select Series: <strong>E2</strong></li>
-    <li>Machine Type: <code>e2-medium (vCPU, 1 Core, 4GB memory)</code></li>
-    <li>Boot Disk:
-      <ul class="ml-6 list-disc">
-        <li>Operating System: Debian</li>
-        <li>Version: Debian GNU/Linux 11 (bullseye)</li>
-        <li>Disk Type: Balanced persistent disk</li>
-        <li>Size: 10 GB</li>
-      </ul>
-    </li>
-    <li>Networking → Firewall: Allow HTTP traffic</li>
-    <li>Click <strong>Create</strong> to finish VM instance setup</li>
-  </ul>
+          <h3 class="text-xl font-semibold text-purple-200 mt-4 mb-2">Task 1: Create a new Instance from the Cloud Console</h3>
+          <ul class="list-disc list-inside space-y-2">
+            <li>Navigation Menu → <strong>Compute Engine</strong> → <strong>VM Instances</strong></li>
+            <li>Click <strong>Create Instance</strong> → Name: <code>gcelab</code></li>
+            <li>Set Zone and Region as instructed</li>
+            <li>Select Series: <strong>E2</strong></li>
+            <li>Machine Type: <code>e2-medium (vCPU, 1 Core, 4GB memory)</code></li>
+            <li>Boot Disk:
+              <ul class="ml-6 list-disc">
+                <li>Operating System: Debian</li>
+                <li>Version: Debian GNU/Linux 11 (bullseye)</li>
+                <li>Disk Type: Balanced persistent disk</li>
+                <li>Size: 10 GB</li>
+              </ul>
+            </li>
+            <li>Networking → Firewall: Allow HTTP traffic</li>
+            <li>Click <strong>Create</strong> to finish VM instance setup</li>
+          </ul>
 
-  <h3 class="text-xl font-semibold text-purple-200 mt-4 mb-2">Task 2: Install an NGINX Web Server</h3>
-  <ul class="list-disc list-inside space-y-2">
-    <li>Click <strong>SSH</strong> → Authorize connection</li>
-    <li><code>sudo apt-get update</code></li>
-    <li><code>sudo apt-get install -y nginx</code></li>
-    <li>Verify NGINX is running: <code>ps auwx | grep nginx</code></li>
-    <li>Access via <strong>External IP</strong> link</li>
-    <li>Click <strong>Check my progress</strong></li>
-  </ul>
+          <h3 class="text-xl font-semibold text-purple-200 mt-4 mb-2">Task 2: Install an NGINX Web Server</h3>
+          <ul class="list-disc list-inside space-y-2">
+            <li>Click <strong>SSH</strong> → Authorize connection</li>
+            <li><code>sudo apt-get update</code></li>
+            <li><code>sudo apt-get install -y nginx</code></li>
+            <li>Verify NGINX is running: <code>ps auwx | grep nginx</code></li>
+            <li>Access via <strong>External IP</strong> link</li>
+            <li>Click <strong>Check my progress</strong></li>
+          </ul>
 
-  <h3 class="text-xl font-semibold text-purple-200 mt-4 mb-2">Task 3: Create a New Instance with gcloud</h3>
-  <ul class="list-disc list-inside space-y-2">
-    <li><code>gcloud compute instances create gcelab2 --machine-type e2-medium --zone=$ZONE</code></li>
-    <li>Wait 3–4 seconds</li>
-    <li>Click <strong>Check my progress</strong></li>
-    <li>For defaults: <code>gcloud compute instances create --help</code></li>
-    <li>To exit: <kbd>Ctrl</kbd> + <kbd>C</kbd></li>
-  </ul>
+          <h3 class="text-xl font-semibold text-purple-200 mt-4 mb-2">Task 3: Create a New Instance with gcloud</h3>
+          <ul class="list-disc list-inside space-y-2">
+            <li><code>gcloud compute instances create gcelab2 --machine-type e2-medium --zone=$ZONE</code></li>
+            <li>Wait 3–4 seconds</li>
+            <li>Click <strong>Check my progress</strong></li>
+            <li>For defaults: <code>gcloud compute instances create --help</code></li>
+            <li>To exit: <kbd>Ctrl</kbd> + <kbd>C</kbd></li>
+          </ul>
 
-  <h3 class="text-xl font-semibold text-purple-200 mt-4 mb-2">To Verify</h3>
-  <ul class="list-disc list-inside space-y-2">
-    <li>Navigation Menu → <strong>Compute Engine</strong> → <strong>VM Instances</strong></li>
-    <li>Confirm second line shows: <code>gcelab2</code></li>
-    <li>Check with: <code>gcloud compute ssh gcelab2 --zone=Zone</code></li>
-    <li>Enter <strong>Y</strong> when prompted</li>
-    <li><code>exit</code> to close instance</li>
-  </ul>
+          <h3 class="text-xl font-semibold text-purple-200 mt-4 mb-2">To Verify</h3>
+          <ul class="list-disc list-inside space-y-2">
+            <li>Navigation Menu → <strong>Compute Engine</strong> → <strong>VM Instances</strong></li>
+            <li>Confirm second line shows: <code>gcelab2</code></li>
+            <li>Check with: <code>gcloud compute ssh gcelab2 --zone=Zone</code></li>
+            <li>Enter <strong>Y</strong> when prompted</li>
+            <li><code>exit</code> to close instance</li>
+          </ul>
 
-  <h3 class="text-xl font-semibold text-purple-200 mt-4 mb-2">Task 4: Test Your Knowledge</h3>
-  <ul class="list-disc list-inside space-y-2">
-    <li>How can you create a VM instance in Compute Engine?</li>
-    <li><strong>Answer:</strong> <em>The Cloud Console</em> & <em>The gcloud command line tool</em></li>
-    <li>Submit</li>
-    <li>End Lab</li>
-  </ul>
-</section>
+          <h3 class="text-xl font-semibold text-purple-200 mt-4 mb-2">Task 4: Test Your Knowledge</h3>
+          <ul class="list-disc list-inside space-y-2">
+            <li>How can you create a VM instance in Compute Engine?</li>
+            <li><strong>Answer:</strong> <em>The Cloud Console</em> & <em>The gcloud command line tool</em></li>
+            <li>Submit</li>
+            <li>End Lab</li>
+          </ul>
+        </section>
 
         <section class="bg-gray-800 p-8 md:px-12 md:py-10 rounded-2xl shadow-md ml-2 md:ml-6 mt-6">
   <h2 class="text-2xl font-semibold text-pink-300 mb-4">App Engine: Qwik Start - Python</h2>
@@ -408,5 +449,22 @@ gcloud container clusters create --machine-type=e2-medium --zone=us-west1-c lab-
 </section>
       </div>
     </div>
+
+   <footer class="bg-white border-blue-800/30 py-8">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <p class="text-gray-500 text-sm">&copy; 2025 Sarfaraz's GCP Foundation Notes. All strategies and templates for educational purposes. 
+          <a href="https://www.linkedin.com/in/hsarfaraz" target="_blank" title="LinkedIn" class="ml-1 inline-block">
+            <i class="fab fa-linkedin text-blue-600 hover:text-blue-800 text-base"></i>
+          </a>
+           <a href="https://www.linkedin.com/in/hsarfaraz" target="_blank" class="inline-flex items-center text-blue-700 hover:underline">
+        <svg class="w-2 h-2 mr-1 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM0 8h5V24H0V8zm7.5 0h4.6v2.57h.06c.64-1.2 2.21-2.47 4.56-2.47 4.88 0 5.78 3.22 5.78 7.4V24h-5V14.5c0-2.25-.04-5.14-3.13-5.14-3.14 0-3.62 2.45-3.62 4.98V24h-5V8z"/>
+        </svg>
+        
+      </a>
+           
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
